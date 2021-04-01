@@ -1,6 +1,9 @@
 // Gets an array of all the elements from the specified class
 const remove = document.getElementsByClassName('remove');
 const edit = document.getElementsByClassName('edit');
+const addButton = document.getElementById("addButton");
+
+addButton.onclick = updateList;
 
 // Adds the onclick event for the 'Remove' button
 function removeEvent() {
