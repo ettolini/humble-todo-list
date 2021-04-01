@@ -2,8 +2,12 @@
 const remove = document.getElementsByClassName('remove');
 const edit = document.getElementsByClassName('edit');
 const addButton = document.getElementById("addButton");
+const input = document.getElementById("input");
 
 addButton.onclick = updateList;
+input.onkeyup = (event) => {
+    if (event.which === 13) updateList();
+}
 
 // Adds the onclick event for the 'Remove' button
 function removeEvent() {
